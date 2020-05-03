@@ -1,0 +1,81 @@
+/* TABLE OF CONTENTS
+
+	1. Import section
+	2. Basic styles
+	3. BUTTONS
+	4. HEADER
+	5. SLIDER
+	6. SERVICES
+	7. OUR WORKS
+	8. PRICING
+	9. ABOUT US
+	10. OUR TEAM
+	11. TESTIMONIAL
+	12. FUN FACTS
+	13. CONTACT
+	14. BLOG
+	15. FOOTER
+	16. SCROLL TO TOP
+
+*/
+
+
+
+/* 1. IMPORT SECTION */
+
+	/*@import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");*/
+
+
+
+
+/* 2. BASIC STYLES */
+
+	html, body {
+		height: 100%;
+	}
+
+	body {
+		font-family: "Raleway", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 200;
+		line-height: 1.7857;
+		letter-spacing: 0.075em;
+		color: #333333;
+		background-color: #fff;
+	}
+
+	p {
+		line-height: 1.5;
+	}
+
+	p.contact_me{
+		font-family: 'Raleway', sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1;
+    }
+    
+	.st-border{
+		width: 34px;
+		height: 1px;
+		display: block;
+		background-color: #000;
+	}
+
+/* 13. CONTACT */
+	.contact-form input[type="text"],
+	.contact-form input[type="email"]{
+		border: 1px solid #E8E8E8;
+		padding: 8px 14px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.contact-form textarea{
+		border: 1px solid #E8E8E8;
+		padding: 8px 14px;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right:10px;
+	}
