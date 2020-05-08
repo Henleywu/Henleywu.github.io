@@ -249,6 +249,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -405,8 +406,6 @@
 <script src="/js/next-boot.js"></script>
 
 
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -428,6 +427,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'MJNaO9wmA5CYs00vVEQtsdxA-gzGzoHsz',
+      appKey     : 'yR5ctGWbQnDOKo1QKafnzgpl',
+      placeholder: "友善地评论一下...",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
